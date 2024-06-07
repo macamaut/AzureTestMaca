@@ -1,0 +1,17 @@
+.form-container-styling input, .form-container-styling textarea{
+    width: -webkit-fill-available;
+    max-width: 700px;
+    height: 30px;
+    border-radius: 5px;
+    max-width: 600px;
+    border: 2px solid #5d5d5d;
+    
+}
+
+.form-container-styling textarea{
+    height: 250px;
+}
+
+.error-text{
+    color: red;
+}

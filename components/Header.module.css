@@ -1,0 +1,29 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    background-color: white;
+    z-index: 99;
+    flex-direction: row;
+    height: 96px;
+    line-height: 96px;
+}
+
+.header_image{
+    padding-top: 18px;
+}
+
+.header_title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .header h1 {
+        font-size: 1.4em;
+    }
+}

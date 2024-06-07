@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "title": "The React Framework for Production",
+      "text": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.\n\nReact can change how you think about the designs you look at and the apps you build. Where once you might have seen a forest, after working with React, you will appreciate the individual trees. React makes it easier to think in design systems and UI states. In this tutorial, we’ll guide you through the thought process of building a searchable product data table with React. React rocks.",
+      "userId": 1,
+      "id": "2",
+      "createdAt": "2022-01-08T11:35:45.961Z",
+      "updatedAt": "Thu Feb 29 2024 16:05:25 GMT+0100 (Mitteleuropäische Normalzeit)"
+    },
+    {
+      "title": "React Rocks",
+      "text": "React can change how you think about the designs you look at and the apps you build. Where once you might have seen a forest, after working with React, you will appreciate the individual trees. React makes it easier to think in design systems and UI states. In this tutorial, we’ll guide you through the thought process of building a searchable product data table with React. React Rocks.",
+      "userId": 1,
+      "id": "3",
+      "createdAt": "2022-01-08T11:35:45.961Z",
+      "updatedAt": "2022-01-08T11:37:51.711Z"
+    },
+    {
+      "title": "The React Framework for Production",
+      "text": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed. React is the bomb.",
+      "userId": 1,
+      "id": "4",
+      "createdAt": "2022-01-08T11:35:45.961Z",
+      "updatedAt": "2022-01-08T11:37:37.310Z"
+    },
+    {
+      "title": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+      "text": "The API reference documentation provides detailed information about a function or object in Node.js. This documentation indicates what arguments a method accepts, the return value of that method, and what errors may be related to that method. It also indicates which methods are available for different versions of Node.js.",
+      "userId": 1,
+      "id": "5",
+      "createdAt": "2022-01-08T11:35:45.961Z",
+      "updatedAt": "2022-01-08T11:37:19.605Z"
+    },
+    {
+      "title": "Star Trek: The Next Generation",
+      "text": "Star Trek: The Next Generation (TNG) is an American science fiction television series created by Gene Roddenberry. It originally aired from September 28, 1987 to May 23, 1994 in syndication, spanning 178 episodes over seven seasons. The third series in the Star Trek franchise, it is the second sequel to Star Trek: The Original Series. Set in the 24th century, when Earth is part of the United Federation of Planets, it follows the adventures of a Starfleet starship, the USS Enterprise (NCC-1701-D), in its exploration of the Milky Way galaxy.\n\nWe are the Borg, lower your shields and surrender your ship.",
+      "userId": 1,
+      "id": "6",
+      "createdAt": "2022-01-08T11:35:45.961Z",
+      "updatedAt": "2022-01-08T11:37:08.262Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "userId": 1,
+      "postId": 2,
+      "text": "Toller Beitrag!",
+      "createdAt": "2022-02-11T09:51:48.975Z",
+      "updatedAt": "2022-02-11T14:56:42.167Z"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@admin.ch",
+      "password": "$2a$10$YkFbz7nkfUtM64tKLMfPme2IOwuBEVCWXcGv75NP6BEdeV94eQ/TG",
+      "name": "Adam Admin",
+      "id": "1"
+    }
+  ]
+}

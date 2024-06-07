@@ -1,38 +1,37 @@
 name: 'macas-pipeline'
 
 on:
-    push:
-      branches:
-        - pipeline  # oder der Branch, den du überwachen möchtest
+  push:
+    branches:
+      - pipeline  # or the branch you want to monitor
 
 jobs:
-    build-and-deploy:
-      runs-on: ubuntu-latest
-   
-      steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-   
-      - name: Set up Node.js environment
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20' # oder eine andere Node.js Version, die du benötigst
-   
-          - name: Azure Login
-          uses: azure/login@v1
-          with:
-            client-id: ${{ secrets.Client_ID}}
-            tenant-id: ${{ secrets.Tenant_ID}}
-            subscription-id: ${{ secrets.Sus_ID}}
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-         - name: Deploy WebApp
-         id: deploy-to-webapp
-         uses: azure/webapps-deploy@v2
-         with:
-            app-name: "PipeApp"
-            slot-name: "Production"
-            package: .
-   
-      - name: Clean up
-        run: npm run clean # optional, falls du Aufräumarbeiten durchführen möchtest
-   
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20' # or another Node.js version you need
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        client-id: ${{ secrets.Client_ID }}
+        tenant-id: ${{ secrets.Tenant_ID }}
+        subscription-id: ${{ secrets.Sus_ID }}
+
+    - name: Deploy WebApp
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: "PipeApp"
+        slot-name: "Production"
+        package: .
+
+    - name: Clean up
+      run: npm run clean # optional, if you

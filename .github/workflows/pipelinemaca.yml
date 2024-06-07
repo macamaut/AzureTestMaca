@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'your-app-name'  # Name deiner Azure Web App
+          app-name: 'PipeApp'  # Name deiner Azure Web App
           slot-name: 'production'  # oder ein anderer Slot, falls verwendet
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}  # Publizierungsprofil, das als Geheimnis in GitHub gespeichert wurde
    

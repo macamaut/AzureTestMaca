@@ -1,0 +1,36 @@
+name: 'macas-pipeline'
+
+on:
+    push:
+      branches:
+        - pipeline  # oder der Branch, den du überwachen möchtest
+
+jobs:
+    build-and-deploy:
+      runs-on: ubuntu-latest
+   
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+   
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20' # oder eine andere Node.js Version, die du benötigst
+   
+      - name: Install dependencies
+        run: npm install # oder ein anderer Befehl zum Installieren deiner Abhängigkeiten
+   
+      - name: Build the app
+        run: npm run build # oder ein anderer Build-Befehl, falls notwendig
+   
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'your-app-name'  # Name deiner Azure Web App
+          slot-name: 'production'  # oder ein anderer Slot, falls verwendet
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}  # Publizierungsprofil, das als Geheimnis in GitHub gespeichert wurde
+   
+      - name: Clean up
+        run: npm run clean # optional, falls du Aufräumarbeiten durchführen möchtest
+   

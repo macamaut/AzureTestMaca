@@ -18,12 +18,6 @@ jobs:
         with:
           node-version: '20' # oder eine andere Node.js Version, die du benötigst
    
-      - name: Install dependencies
-        run: npm install # oder ein anderer Befehl zum Installieren deiner Abhängigkeiten
-   
-      - name: Build the app
-        run: npm run build # oder ein anderer Build-Befehl, falls notwendig
-   
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:

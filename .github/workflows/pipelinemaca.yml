@@ -25,13 +25,13 @@ jobs:
             tenant-id: ${{ secrets.Tenant_ID}}
             subscription-id: ${{ secrets.Sus_ID}}
 
-            - name: Deploy WebApp
-            id: deploy-to-webapp
-            uses: azure/webapps-deploy@v2
-            with:
-              app-name: "PipeApp"
-              slot-name: "Production"
-              package: .
+         - name: Deploy WebApp
+         id: deploy-to-webapp
+         uses: azure/webapps-deploy@v2
+         with:
+            app-name: "PipeApp"
+            slot-name: "Production"
+            package: .
    
       - name: Clean up
         run: npm run clean # optional, falls du Aufräumarbeiten durchführen möchtest
